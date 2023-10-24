@@ -20,7 +20,19 @@ In this project, I analyzed Coffee Bean Sales using Python, employing libraries 
 The detailed data was collected through https://www.kaggle.com/datasets/saadharoon27/coffee-bean-sales-raw-dataset/data?select=Raw+Data.xlsx.
 <br> As you can see below he original dataset was a excel sheet contained 3 different sheets named **orders**, **customers** and **products**. orders sheet had 1000 rows and 13 columns, customers sheet had 1000 rows and 9 columns and products sheets had 48 rows and 7 columns.
 
+<h4>Orders Dataframe</h4>
+<img src="Assets/df_orders.png" style="max-width: 540px"/>
+<h4>Cutomers Dataframe</h4>
+<img src="Assets/df_cutomers.png" style="max-width: 540px"/>
+<h4>Products Dataframe</h4>
+<img src="Assets/df_products.png" style="max-width: 540px"/>
 
+
+## Auditing data
+To ensure that it meets quality standards and is fit for my intended purpose, I removed all null columns of orders dataframe. Also, I remove unnecessary data from customers and products dataframe such as Customer Name, Email, Phone Number Address Line, Size and Postcode.
+
+<h4>Generating new feature</h4>
+As the final step of data preprocessing, I created a new feature called 'Sales' by merging the 'Unit Price' column from the 'products' dataframe with the 'Quantity' column from the 'orders' dataframe and multiplying the values in the two columns.
 
 ## Which airline has the most flights?
 This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
