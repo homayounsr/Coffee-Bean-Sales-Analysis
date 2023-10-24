@@ -40,6 +40,7 @@ As the final step of data preprocessing, I created a new feature called 'Sales' 
 <img src="Assets/df_code.png" style="max-width: 540px"/>
 
 Finally, I merged this dataframe with customers dataframe in order to use the information of sales for each city and country. The final dataframe is:
+
 <img src="Assets/df_final.png" style="max-width: 540px"/>
 
 ## Which airline has the most flights?
