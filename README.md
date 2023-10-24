@@ -36,8 +36,11 @@ As the final step of data preprocessing, I created a new feature called 'Sales' 
 
 ## Which airline has the most flights?
 This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
-<img src="./output/output.png" style="max-width: 540px"/>
+<h4>Products_orders Dataframe before generating new feature:</h4>
+<img src="Assets/df_products_orders.png" style="max-width: 540px"/>
 
+<h4>Products_orders Dataframe after generating new feature:</h4>
+<img src="Assets/df_code.png" style="max-width: 540px"/>
 
 ## At which day the delay was higher?
 This plot displays the total count of delays for all airlines based on the days of the week. We can observe that the majority of delays occurred on Friday. 
