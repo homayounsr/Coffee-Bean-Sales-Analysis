@@ -1,18 +1,26 @@
 # Coffee-Bean-Sales-Analysis
-In this project, I analyzed flight delays using Python, and I leveraged libraries such as pandas, matplotlib, and seaborn. I made thoughtful decisions about the types of plots to create, considering whether the variables were categorical or numerical in order to show the relation between these variables. Additionally, I performed a preprocessing step to handle date and time data. The original dataset had these values separated into different columns, which hindered the use of pandas functions for working with date and time information.
-# Preprocessing
-1. Dealing with null values
-2. Dealing with time and turn in to date time pattern
+In this project, I analyzed Coffee Bean Sales using Python, employing libraries such as pandas, matplotlib, and seaborn to answer my questions about this data. This included determining the most popular Coffee Type, the preferred Roast Type, visualizing the top 7 most profitable cities, assessing the most profitable country, comparing the profitability of loyalty card owners to non-owners, identifying the year with the highest sales, and exploring any relationships between unit price and quantity in customer preferences.
 
-# Goals
-1. Which airline has the most flights?
-2. On which day was the delay highest?
-3. At what hour was the delay highest for each airline?
-4. Count delays that are less than 5 minutes, between 5 and 45 minutes, and more than 45 minutes.
+# Preprocessing
+1) Dealing with Null data
+2) Dealing with Duplicate values
+3) Removing unnecessary data
+4) Generate new features based on previous features
+
+# Finding patterns and insights
+1) Which Coffee Type is sold more?
+2) Which Roast Type is sold more?
+3) Plot the top 7 most profitable cities.
+4) Which country is more profitable?
+5) Which group is more profitable, loyalty card owners, or non-owners?
+6) Which year had the highest sales?
+7) Is there any relation between unit price and quantity? Are customers more inclined towards cheaper or more expensive products?
 
 ## Data
-The detailed data was collected through https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input.
-<br> The original dataset contained 581,907,9 rows and 31 columns but after cleaning the data and just selecting the month of january to decrease the amount of data, there were 469,968 rows and 13 columns.
+The detailed data was collected through https://www.kaggle.com/datasets/saadharoon27/coffee-bean-sales-raw-dataset/data?select=Raw+Data.xlsx.
+<br> As you can see below he original dataset was a excel sheet contained 3 different sheets named **orders**, **customers** and **products**. orders sheet had 1000 rows and 13 columns, customers sheet had 1000 rows and 9 columns and products sheets had 48 rows and 7 columns.
+
+
 
 ## Which airline has the most flights?
 This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
