@@ -7,7 +7,7 @@ In this project, I analyzed Coffee Bean Sales using Python, employing libraries 
 3) Removing unnecessary data
 4) Generate new features based on previous features
 
-# Finding patterns and insights
+# Goals
 1) Which Coffee Type is sold more?
 2) Which Roast Type is sold more?
 3) Plot the top 7 most profitable cities.
@@ -43,35 +43,52 @@ Finally, I merged this dataframe with customers dataframe in order to use the in
 
 <img src="Assets/df_final.png" style="max-width: 540px"/>
 
-## Which airline has the most flights?
-This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
 
 
 
+## Finding patterns and insights
 
-## At which day the delay was higher?
-This plot displays the total count of delays for all airlines based on the days of the week. We can observe that the majority of delays occurred on Friday. 
-<img src="./output/output44.png" style="max-width: 540px"/>
-However, a question arises: which airline had the most delays among all the airlines on Friday?
-## At what hour the delay was higher for each airline?
-This plot is a heatmap that visualizes the count of flight delays for different airlines across various days of the week. I chose to use a heatmap because I had three variables, and I wanted to examine the relationship between these three variables. Therefore, a heatmap was a suitable choice for this analysis. As we can see in the plot, the WN airline had the highest number of delays, and these delays were more frequent on Fridays compared to other days.
-<img src="./output/output3.png" style="max-width: 540px"/>
+<h3>Which Coffee Type is sold more?</h3>
 
-## Count delays that are less than 5 min, between 5 and 45 min and more than 45 min
-This plot shows the number of different types of flight delays: those under 5 minutes, those between 5 and 45 minutes, and those over 45 minutes. Regardless of the airline, long delays (over 45 minutes) make up only a small percentage. However, the proportion of delays in these categories varies by airline. For example, SkyWest Airlines has about 30% fewer long delays compared to medium delays (5-45 minutes), whereas Southwest Airlines has four times fewer long delays than medium delays.
-<img src="./output/output2.png" style="max-width: 540px"/>
+  <img src="Assets/output1.png" style="max-width: 540px"/>
+  "Espresso" is the most popular coffee type with sales of $12,306.37, while "Robusta" is the least popular with sales of $9,005.16.
+
+<h3>Which Roast Type is sold more?</h3>
+
+  <img src="Assets/output2.png" style="max-width: 540px"/>
+  Light roast is the preferred option with sales totaling $17,354.34, while dark roast is less favored with sales of $13,179.22.
+
+<h3>Plot the top 7 most profitable cities.</h3>
+
+  <img src="Assets/output3.png" style="max-width: 540px"/>
+  "Washington" leads the way with the highest sales, totaling $1,066.91, and "Philadelphia" lags behind with sales of $511.23 among the top 7 most profitable cities.
+
+<h3>Which country is more profitable?</h3>
+
+  <img src="Assets/output4.png" style="max-width: 540px"/>
+  The United States is the most profitable country with sales amounting to $35,638.60, while the United Kingdom ranks as the least profitable with sales of $2,798.50.
+
+<h3>Which group is more profitable, loyalty card owners, or non-owners?</h3>
+
+  <img src="Assets/output5.png" style="max-width: 540px"/>
+  Although customers without loyalty cards tend to spend more, the total sales are nearly on par with customers who do have loyalty cards.
+
+<h3>Which year had the highest sales?</h3>
+
+  <img src="Assets/output7.png" style="max-width: 540px"/>
+  In 2021, the highest sales were recorded at $13,766.04, while 2022 had the lowest sales at $7,063.33.
+
+<h3>Is there any relation between unit price and quantity? Are customers more inclined towards cheaper or more expensive products?</h3>
+
+  <img src="Assets/output6.png" style="max-width: 540px"/>
+There appears to be a modest relationship, with an increase in price leading to a decrease in quantity. However, due to the limited data, this relationship is not particularly significant.
+
+
 
 
 ## Conclusion
-In conclusion, the provided visualizations and data present several key insights about airline flights and delays:
+In conclusion, our analysis of Coffee Bean Sales has provided valuable insights into various aspects of the data. We found that "Espresso" is the most popular coffee type, while "Robusta" is the least favored. Light roast coffee is the preferred option, with "Dark roast" following closely. The top 7 most profitable cities were led by "Washington," with "Philadelphia" at the tail end.
 
-**Airline Count:** The list of airlines and their respective flight counts highlights that WN airline had the most flights among all the airlines, indicating their significant presence in the dataset.
+From a country perspective, the United States emerged as the most profitable, while the United Kingdom lagged in profitability. Surprisingly, customers without loyalty cards tend to spend more, but the total sales between loyalty card owners and non-owners are quite balanced.
 
-**Day-Based Delays:** The plot illustrating delays based on days of the week indicates that the majority of flight delays occurred on Fridays. This information can be valuable for both airlines and passengers when planning their travel schedules.
-
-**Heatmap Analysis:** The heatmap visualization, which examines flight delays across different airlines and days of the week, provides a comprehensive overview of how delays are distributed. It helps us understand that WN airline had the highest number of delays, particularly on Fridays. This insight can guide airline companies in identifying areas for improvement in their scheduling or operations.
-
-**Delay Categories:** The plot that categorizes delays into three groups (under 5 minutes, 5-45 minutes, and over 45 minutes) for various airlines reveals that, regardless of the airline, long delays (over 45 minutes) constitute a relatively small portion of the delays. However, the distribution of delays in these categories varies between airlines, with some airlines experiencing a higher proportion of medium delays (5-45 minutes) compared to long delays.
-
-These insights can be valuable for airlines and travelers alike. Airlines can use this information to optimize their operations and minimize delays, especially on Fridays. Passengers can make more informed decisions when planning their trips, potentially avoiding peak delay times and airlines with specific delay patterns.
-
+We also observed that 2021 was the peak year in terms of sales, while 2022 experienced the lowest sales figures. Our exploration of the relationship between unit price and quantity suggested a modest correlation, with higher prices generally associated with decreased quantities. However, it's essential to note that this relationship may not be highly significant due to limited data. These findings offer valuable insights that can inform strategies and decision-making in the coffee sales industry.
