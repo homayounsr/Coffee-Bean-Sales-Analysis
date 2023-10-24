@@ -40,7 +40,7 @@ As the final step of data preprocessing, I created a new feature called 'Sales' 
 <img src="Assets/df_code.png" style="max-width: 540px"/>
 
 Finally, I merged this dataframe with customers dataframe in order to use the information of sales for each city and country. The final dataframe is:
-<img src="Assets/df.png" style="max-width: 540px"/>
+<img src="Assets/df_final.png" style="max-width: 540px"/>
 
 ## Which airline has the most flights?
 This is a list of all the airlines along with the count of their flights. As we can see, WN airline had the highest number of flights among all the airlines. Additionally, I have created a legend for this plot based on another dataset named "airline" using a one-to-many relationship between the two datasets.
